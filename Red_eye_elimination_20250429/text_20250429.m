@@ -1,0 +1,10 @@
+I = imread('1.png');
+I_1 = rgb2hsi(I);
+I_2 = hsi2rgb(I_1);
+tt = double(I_2) -double(I);
+subplot(1,3,1);
+imshow(I);
+subplot(1,3,2);
+imshow(uint8(I_2));
+subplot(1,3,3);
+imshow(tt);
